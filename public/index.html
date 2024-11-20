@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Admin Panel</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <div class="container">
+        <h1>Admin Panel</h1>
+
+        <!-- Update API Key -->
+        <section>
+            <h2>Update API Key</h2>
+            <input type="text" id="apiKeyInput" placeholder="Enter OpenWeather API Key">
+            <button id="updateApiKeyBtn">Update API Key</button>
+        </section>
+
+        <!-- Users List -->
+        <section>
+            <h2>Manage Users</h2>
+            <button id="fetchUsersBtn">Fetch Users</button>
+            <table id="usersTable">
+                <thead>
+                    <tr>
+                        <th>ID</th>
+                        <th>Username</th>
+                        <th>Chat ID</th>
+                        <th>Status</th>
+                        <th>Actions</th>
+                    </tr>
+                </thead>
+                <tbody>
+                    <!-- Users will be dynamically added here -->
+                </tbody>
+            </table>
+        </section>
+    </div>
+    <script src="script.js"></script>
+</body>
+</html
